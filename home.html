@@ -5,15 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="John Erickson">
+  
+  <!-- Grid CSS -->
+	<link rel="stylesheet" href="/public/styles/grid.css" type="text/css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+  <link rel="stylesheet" href="/public/styles/styles.css" type="text/css">
 
   <!-- Media Queries CSS -->
-  <link rel="stylesheet" href="/styles/queries.css" type="text/css">
+  <link rel="stylesheet" href="/public/styles/queries.css" type="text/css">
   <title>Dice Game</title>
 </head>
 <body>
-  <script src="scripts/app.js"></script>
+	<header class="section group">
+		<div class="col span_3_of_3">
+			<p>New Game</p>	
+		</div>
+	</header>
+	
+	<main>
+		<div class="section group">
+			<div class="col span_1_of_3">
+				<div>
+					<p>Player 1</p>
+				</div>
+				<div>
+					<p>0</p>
+				</div>
+				<div>
+					<p>Current Score</p>
+				</div>
+			</div>
+		
+			<div class="col span_1_of_3">
+				<div>
+					<p id="dice">Dice</p>
+				</div>
+				<div>
+					<p>Roll Dice</p>
+				</div>
+				<div>
+					<p>Hold</p>
+				</div>
+			</div>
+		
+			<div class="col span_1_of_3">
+				<div>
+					<p>Player 2</p>
+				</div>
+				<div>
+					<p>0</p>
+				</div>
+				<div>
+					<p>Current Score</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+  <script src="/public/scripts/app.js"></script>
 </body>
 </html>

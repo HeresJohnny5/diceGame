@@ -1,0 +1,36 @@
+/********************/
+/* COLORS */
+/********************/
+
+/********************/
+/* BODY */
+/********************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* The box-sizing propery is used to tell the browser what the sizing properties (width and height) should include; border-box includes content, padding, and border, but not the margin */
+}
+
+html {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	/* The text-rendering property provides information to the rendering engine about what to optimize for when rendering text; optimizeLegibility emphasizes legibility over rendering speed */
+}
+
+/********************/
+/* HEADINGS CSS */
+/********************/
+
+h1 {
+	font-weight: 300;
+	font-size: 240%;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	color: #fff;
+}
