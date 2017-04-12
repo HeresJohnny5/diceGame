@@ -36,4 +36,9 @@
 	.dice-container {
 		padding: 0 125px 20px 125px;
 	}
+	
+	.game-rules {
+		width: 300px;
+    margin: 0 auto;
+	}
 }

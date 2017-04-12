@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Erickson">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="/public/styles/font-awesome.min.css" type="text/css">
+  
+  <!-- Grid CSS -->
+	<link rel="stylesheet" href="/public/styles/grid.css" type="text/css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/public/styles/styles.css" type="text/css">
+
+  <!-- Media Queries CSS -->
+  <link rel="stylesheet" href="/public/styles/queries.css" type="text/css">
+  <title>Dice Game</title>
+</head>
+<body>
+	<header class="section group">
+		<div class="col span_3_of_3 new-game">
+			<button class="btn-new">
+				<i class="fa fa-plus-circle" aria-hidden="true"></i>New Game
+			</button>	
+		</div>
+	</header>
+	
+	<main>
+		<div class="section group">
+			<div class="col span_1_of_3 player-0-panel">
+				<div class="player-name" id="name-0">
+					<p>Player 1</p>
+				</div>
+				<div class="player-score" id="score-0">
+					<p>0</p>
+				</div>
+				<div class="player-current-box">
+					<div class="player-current-label">
+						<p>Current</p>
+					</div>
+					<div class="player-current-score" id="current-0">
+						<p>0</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col span_1_of_3 game-functions">
+				<div class="dice-container">
+					<img src="/public/images/dice-1.png" alt="Dice" class="dice">
+				</div>
+				<div class="btn-container">
+					<button class="btn-roll">
+						<i class="fa fa-refresh" aria-hidden="true"></i>Roll Dice
+					</button>
+				</div>
+				<div class="btn-container">
+					<button class="btn-hold">
+						<i class="fa fa-hand-paper-o" aria-hidden="true"></i>Hold
+					</button>
+				</div>
+			</div>
+		
+			<div class="col span_1_of_3 player-1-panel">
+				<div class="player-name" id="name-1">
+					<p>Player 2</p>
+				</div>
+				<div class="player-score" id="score-1">
+					<p>0</p>
+				</div>
+				<div class="player-current-box">
+					<div class="player-current-label">
+						<p>Current</p>
+					</div>
+					<div class="player-current-score" id="current-1">
+						<p>0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+  <script src="/public/scripts/app.js"></script>
+</body>
+</html>

@@ -28,19 +28,33 @@ html {
 /* HEADINGS CSS */
 /********************/
 
-/*
-h1 {
+h1, h2 {
 	font-weight: 300;
-	font-size: 240%;
 	word-spacing: 3px;
 	letter-spacing: 1px;
-	color: #fff;
 }
-*/
+
+h1 {
+	color: #eb4d4d;
+}
+
+h2 {
+	color: #555;
+	margin: 10px 0;
+}
 
 /********************/
 /* MAIN CSS */
 /********************/
+
+.game-rules {
+	width: 800px;
+  margin: 0 auto;
+}
+
+.game-rules li {
+	margin: 10px 0;
+}
 
 .new-game, .player-0-panel, .game-functions, .player-1-panel {
 	text-align: center;
@@ -114,6 +128,11 @@ i {
 
 .btn-container {
 	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
 }
 
 /********************/
