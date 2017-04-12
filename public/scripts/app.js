@@ -40,26 +40,23 @@ function nextPlayer() {
 document.querySelector('.btn-roll').addEventListener('click', function() {	
 	if(gameplaying === true) {
 		var randomNumber = Math.floor(Math.random() * 6) + 1;
-
-		if(priorRole === 6 && randomNumber === 6) {
-			document.querySelector('#score-' + activePlayer).textContent = 0;
-			document.querySelector('#current-' + activePlayer).textContent = 0;		
-			priorRole = 0;
-			return nextPlayer();
-		} else {
-			priorRole = randomNumber;
-		}
 		
 		var diceDom = document.querySelector('.dice');
 		diceDom.style.display = 'block';
 		diceDom.src = '/public/images/dice-' + randomNumber + '.png';
 		
-		if(randomNumber !== 1) {
-			roundScore += randomNumber;
-			document.querySelector('#current-' + activePlayer).textContent = roundScore;		
-		} else {
+		if(priorRole === 6 && randomNumber === 6) {
+			scores[activePlayer] = 0;
+			document.querySelector('#score-' + activePlayer).textContent = 0;
 			nextPlayer();
+		} else if(randomNumber !== 1) {
+				roundScore += randomNumber;
+				document.querySelector('#current-' + activePlayer).textContent = roundScore;		
+		} else {
+				nextPlayer();
 		}
+		
+		priorRole = randomNumber;
 	}
 });
 
@@ -69,13 +66,13 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 		scores[activePlayer] += roundScore;
 
 		if(scores[activePlayer] >= 20) {
-			document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
-			document.querySelector('#name-' + activePlayer).textContent = 'Winner';
-			document.querySelector('#name-' + activePlayer).style.color = '#eb4d4d';
-			gameplaying = false;
+				document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+				document.querySelector('#name-' + activePlayer).textContent = 'Winner';
+				document.querySelector('#name-' + activePlayer).style.color = '#eb4d4d';
+				gameplaying = false;
 		} else {
-			document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
-			nextPlayer();	
+				document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+				nextPlayer();	
 		}
 	}
 });
