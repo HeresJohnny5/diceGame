@@ -1,0 +1,38 @@
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+	.new-game {
+		margin-top: 20px;
+	}
+	
+	.btn-new, .btn-roll, .btn-hold {
+		font-size: 20px;
+	}
+	
+	.btn-container {
+		padding: 10px 20px;
+	}
+	
+	.player-0-panel, .player-1-panel {
+		height: 300px;
+	}
+	
+	.player-0-panel {
+		padding: 40px 100px 0 100px;
+	}
+	
+	.player-1-panel {
+		padding: 20px 100px 0 100px;
+	}
+	
+	.player-name {
+		margin-top: 0;
+	}
+	
+	.player-score {
+		font-size: 60px;
+		margin-bottom: 20px;
+	}
+	
+	.dice-container {
+		padding: 0 125px 20px 125px;
+	}
+}
