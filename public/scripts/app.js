@@ -58,7 +58,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 	if(gameplaying === true) {
 		scores[activePlayer] += roundScore;
 
-		if(scores[activePlayer] >= 20) {
+		if(scores[activePlayer] >= 100) {
 			document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 			document.querySelector('#name-' + activePlayer).textContent = 'Winner';
 			document.querySelector('#name-' + activePlayer).style.color = '#eb4d4d';
